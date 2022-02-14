@@ -17,15 +17,31 @@ html {
 }
 
 .movie-title {
-    text-transform:capitalize;
-    
+    text-transform:uppercase;
+    transform: translateY(-150px);
+    animation: slide-from-top 3.5s ease-in-out forwards;
 }
 
+@keyframes slide-from-top {
+    80% {transform: translateY(20px);}
+    100% {transform: translateY(0);}
+}
+    
+
+
 .movie-poster-container img{
-    height: 85%;
+    height: 500px;
     width: 30%;
     text-align: right;
     border-radius: 10px;
+    position: relative;
+    left: -50rem;
+    animation: slide-from-left 3.5s ease-in-out forwards;
+}
+
+@keyframes slide-from-left {
+    80% {left: 1.5rem;}
+    100% {left: 0;}
     }
 
 
@@ -36,8 +52,13 @@ html {
     padding: 0.3rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    border-radius: 5px;
 }
+
+.movie-duration:before {content: "\2022";}
+
 .movie-info-quote {
+    margin-top: 0.3rem;
     opacity: 0;
     animation: fade-in 3.5s ease-in-out forwards ;
     animation-delay: 1s;}
@@ -48,6 +69,7 @@ html {
     
 
  .movie-info-overview-title {
+     margin-top: 0.3rem;
     text-transform: capitalize;
     letter-spacing: 0.1rem;}
 
@@ -82,7 +104,7 @@ html {
 }
 
 footer {
-    margin-top: 3rem;
+    margin-top: 1rem;
     text-align: center;
     color: #777;}
 
