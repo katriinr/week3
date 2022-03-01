@@ -6,7 +6,7 @@ let moviePoster=document.querySelector('.movie-poster');
 let modal= document.querySelector('#myModal');
 //select close button
 let closeBtn= document.querySelector('.closeBtn');
-//select modal window image
+//select modal window images
 let modalImage= document.querySelector('.movie-poster-modal');
 moviePoster.addEventListener('click',()=> {
     modal.style.display='block'

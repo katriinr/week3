@@ -60,13 +60,18 @@ html {
 .movie-poster-container{
     height: 500px;
     width: 30%;
+    margin: auto;
     text-align: center;
     border-radius: 10px;
     position: relative;
     left: -50rem;
     animation: slide-from-left 3.5s ease-in-out forwards;
 }
-
+.movie-poster img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    }
 .movie-poster{
     cursor: pointer;
     display: inline-block;
